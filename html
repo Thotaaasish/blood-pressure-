@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="C:/Users/aasis/Downloads/TestLogo/TestLogo@2x.jpg" alt="Logo" class="h-10">
+            </div>
+            <nav class="flex items-center space-x-8 text-gray-600">
+                <a href="#" class="hover:text-blue-500">Overview</a>
+                <a href="#" class="text-blue-500 font-semibold">Patients</a>
+                <a href="#" class="hover:text-blue-500">Schedule</a>
+                <a href="#" class="hover:text-blue-500">Message</a>
+                <a href="#" class="hover:text-blue-500">Transactions</a>
+                <div class="flex items-center space-x-4">
+                    <img src="C:/Users/aasis/Downloads/HealthCare Dashboard/Dashboard/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png" alt="Doctor Profile" class="h-10 rounded-full">
+                    <div>
+                        <h5 class="text-sm font-semibold text-gray-800">Dr. Jose Simmons</h5>
+                        <p class="text-xs text-gray-500">General Practitioner</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-6 grid grid-cols-12 gap-6">
+        
+        <!-- Sidebar -->
+        <aside class="col-span-3 bg-white shadow-md rounded-lg p-4">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">Patients</h2>
+            <ul class="space-y-4">
+                <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                    <div class="flex items-center space-x-4">
+                        <img src="C:/Users/aasis/Downloads/Layer 8/Layer 8@2x.jpg" alt="Emily Williams" class="h-10 w-10 rounded-full">
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-800">Emily Williams</h4>
+                            <p class="text-xs text-gray-500">Female, 18</p>
+                        </div>
+                    </div>
+                    <span class="text-gray-400">•••</span>
+                </li>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 1\Layer 1@2x.jpg" alt="Ryan Johnson" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Ryan Johnson</h4>
+                        <p class="text-xs text-gray-500">Male, 45</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 3\Layer 3@2x.jpg" alt="Brandon Mitchell" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Brandon Mitchell</h4>
+                        <p class="text-xs text-gray-500">Male, 36</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 2\Layer 2.jpg" alt="Jessica Taylor" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Jessica Taylor</h4>
+                        <p class="text-xs text-gray-500">Female, 28</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 6\Layer 6@2x.jpg"  alt="Samantha Johnson" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Samantha Johnson</h4>
+                        <p class="text-xs text-gray-500">Female, 56</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 12\Layer 12@2x.jpg" alt="Ashley Martinez" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Ashley Martinez</h4>
+                        <p class="text-xs text-gray-500">Female, 32</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 10\Layer 10@2x.jpg" alt="Olivia Brown" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Olivia Brown</h4>
+                        <p class="text-xs text-gray-500">Female, 19</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 9\Layer 9@2x.jpg" alt="Tyler Davis" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Tyler Davis</h4>
+                        <p class="text-xs text-gray-500">Male, 30</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 4\Layer 4@2x.jpg" alt="Kevin Anderson" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Kevin Anderson</h4>
+                        <p class="text-xs text-gray-500">Male, 30</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 5\Layer 5@2x.jpg" alt="Dylan Thompson" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Dylan Thompson</h4>
+                        <p class="text-xs text-gray-500">Male, 36</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\Layer 7\Layer 7@2x.jpg"  alt="Nathan Evans" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Nathan Evans</h4>
+                        <p class="text-xs text-gray-500">Male, 58</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+            <li class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-100">
+                <div class="flex items-center space-x-4">
+                    <img src="C:\Users\aasis\Downloads\pexels-photo-1222271\pexels-photo-1222271@2x.jpg" alt="Mike Nolan" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800">Mike Nolan</h4>
+                        <p class="text-xs text-gray-500">Male, 31</p>
+                    </div>
+                </div>
+                <span class="text-gray-400">•••</span>
+            </li>
+                <!-- Add more patient items here -->
+            </ul>
+        </aside>
+
+        <!-- Blood Pressure Dashboard -->
+        <section class="col-span-6 bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">Diagnosis History</h2>
+            <div class="bg-purple-50 p-4 rounded-lg mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="text-sm font-semibold text-gray-800">Blood Pressure</h4>
+                    <p class="text-sm text-gray-600">Last 6 months</p>
+                </div>
+                <div class="relative h-40">
+                    <canvas id="bloodPressureChart"></canvas>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <div class="text-sm text-gray-600">
+                        <p><span class="text-pink-500 font-semibold">Systolic:</span> 160 (Higher than Average)</p>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p><span class="text-purple-500 font-semibold">Diastolic:</span> 78 (Lower than Average)</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                        <img src="C:\Users\aasis\Downloads\HeartBPM\HeartBPM@2x.jpg" alt="Respiratory Rate">
+                        <p class="text-sm font-semibold text-gray-800">Respiratory Rate</p>
+                        <h3 class="text-2xl font-bold text-blue-500">20 bpm</h3>
+                        <p class="text-xs text-gray-600">Normal</p>
+                    </div>
+                    <div class="bg-pink-50 p-4 rounded-lg text-center">
+                        <img src="C:\Users\aasis\Downloads\temperature\temperature@2x.jpg" alt="Respiratory Rate">
+                        <p class="text-sm font-semibold text-gray-800">Temperature</p>
+                        <h3 class="text-2xl font-bold text-pink-500">98.6°F</h3>
+                        <p class="text-xs text-gray-600">Normal</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg text-center">
+                        <img src="C:\Users\aasis\Downloads\respiratory rate\respiratory rate@2x.jpg" alt="Respiratory Rate">
+                        <p class="text-sm font-semibold text-gray-800">Heart Rate</p>
+                        <h3 class="text-2xl font-bold text-red-500">78 bpm</h3>
+                        <p class="text-xs text-gray-600">Lower than Average</p>
+                    </div>
+                </div>
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">Diagnosis Information</h2>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="border-b py-2 px-4 text-gray-600">Problem/Diagnosis</th>
+                            <th class="border-b py-2 px-4 text-gray-600">Description</th>
+                            <th class="border-b py-2 px-4 text-gray-600">Status</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-b py-2 px-4 text-gray-800">Hypertension</td>
+                        <td class="border-b py-2 px-4 text-gray-600">Chronic high blood pressure</td>
+                        <td class="border-b py-2 px-4 text-gray-600">Under Observation</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b py-2 px-4 text-gray-800">Type 2 Diabetes</td>
+                        <td class="border-b py-2 px-4 text-gray-600">Insulin resistance and elevated blood sugar</td>
+                        <td class="border-b py-2 px-4 text-gray-600">Cured</td>
+                    </tr>
+                    <tr>
+                        <td class="border-b py-2 px-4 text-gray-800">Asthma</td>
+                        <td class="border-b py-2 px-4 text-gray-600">Recurrent episodes of bronchial constriction</td>
+                        <td class="border-b py-2 px-4 text-gray-600">Inactive</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <!-- Profile Sidebar -->
+        <aside class="col-span-3 bg-white shadow-md rounded-lg p-4">
+            <div class="text-center mb-4">
+                <img src="C:/Users/aasis/Downloads/Layer 2/Layer 2@2x.jpg" alt="Jessica Taylor" class="h-20 w-20 mx-auto rounded-full">
+                <h3 class="text-lg font-semibold text-gray-800 mt-2">Jessica Taylor</h3>
+            </div>
+            <ul class="text-sm text-gray-600 space-y-2">
+                <li><strong>Date of Birth:</strong> August 23, 1996</li>
+                <li><strong>Gender:</strong> Female</li>
+                <li><strong>Contact Info:</strong> (415) 555-1234</li>
+                <li><strong>Emergency Contact:</strong> (415) 555-5678</li>
+                <li><strong>Insurance Provider:</strong> Sunrise Health Assurance</li>
+            </ul>
+            <button class="mt-4 bg-blue-500 w-full py-2 text-white font-semibold rounded hover:bg-blue-600">
+                Show All Information
+            </button>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Lab Categories</h3>
+                <ul class="space-y-4">
+                    <li class="bg-white p-4 rounded-lg shadow-md hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Lab Results</h4>
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-md hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Blood Tests</h4>
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-md hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">CT Scans</h4>
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-md hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Radiology Reports</h4>
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-md hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">X-Rays</h4>
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-md hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Urine Test</h4>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        // Chart.js Config
+        const ctx = document.getElementById('bloodPressureChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Oct, 2023', 'Nov, 2023', 'Dec, 2023', 'Jan, 2024', 'Feb, 2024', 'Mar, 2024'],
+                datasets: [
+                    {
+                        label: 'Systolic',
+                        data: [120, 110, 130, 140, 160, 160],
+                        borderColor: '#EC4899',
+                        backgroundColor: 'rgba(236, 72, 153, 0.2)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 5,
+                        pointBackgroundColor: '#EC4899',
+                    },
+                    {
+                        label: 'Diastolic',
+                        data: [100, 80, 90, 70, 75, 78],
+                        borderColor: '#8B5CF6',
+                        backgroundColor: 'rgba(139, 92, 246, 0.2)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 5,
+                        pointBackgroundColor: '#8B5CF6',
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+                scales: {
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#6B7280', font: { size: 12 } },
+                    },
+                    y: {
+                        ticks: { color: '#6B7280', font: { size: 12 } },
+                    },
+                },
+            },
+        });
+    </script>
+    
+
+</body>
+</html>
